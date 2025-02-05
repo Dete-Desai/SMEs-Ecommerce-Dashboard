@@ -1,0 +1,81 @@
+{
+	"name": "purity-dashboard-react",
+	"version": "2.0.2",
+	"private": true,
+	"homepage": "https://demos.creative-tim.com/purity-ui-dashboard/#/",
+	"dependencies": {
+		"@chakra-ui/icons": "^2.2.4",
+		"@chakra-ui/react": "3.7.0",
+		"@chakra-ui/system": "^2.6.2",
+		"@chakra-ui/theme-tools": "^2.2.6",
+		"@emotion/cache": "^11.14.0",
+		"@emotion/react": "^11.14.0",
+		"@emotion/styled": "^11.14.0",
+		"@fontsource/open-sans": "^5.1.1",
+		"@fontsource/raleway": "^5.1.1",
+		"@fontsource/roboto": "^5.1.1",
+		"ajv": "^8.17.1",
+		"apexcharts": "^4.4.0",
+		"classnames": "2.5.1",
+		"cross-env": "^7.0.3",
+		"framer-motion": "^12.3.0",
+		"match-sorter": "8.0.0",
+		"moment": "^2.30.1",
+		"node-sass": "^9.0.0",
+		"nouislider": "15.8.1",
+		"react": "19.0.0",
+		"react-apexcharts": "^1.7.0",
+		"react-big-calendar": "1.17.1",
+		"react-bootstrap-sweetalert": "5.2.0",
+		"react-datetime": "3.3.1",
+		"react-dom": "19.0.0",
+		"react-github-btn": "^1.4.0",
+		"react-icons": "^5.4.0",
+		"react-jvectormap": "0.0.16",
+		"react-router-dom": "7.1.5",
+		"react-scripts": "^5.0.1",
+		"react-swipeable-views": "0.14.0",
+		"react-table": "7.8.0",
+		"react-tagsinput": "3.20.3",
+		"stylis": "^4.3.5",
+		"stylis-plugin-rtl": "^2.1.1"
+	},
+	"resolutions": {
+		"react-error-overlay": "6.0.11"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "cross-env CI=false cross-env PUBLIC_URL=/ react-scripts build && gulp licenses",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"deploy": "npm run build",
+		"lint:check": "eslint . --ext=js,jsx;  exit 0",
+		"lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",
+		"install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+	},
+	"optionalDependencies": {
+		"@babel/core": "7.26.7",
+		"typescript": "5.7.3"
+	},
+	"devDependencies": {
+		"@babel/plugin-transform-react-jsx-source": "^7.25.9",
+		"eslint-config-prettier": "10.0.1",
+		"eslint-plugin-prettier": "5.2.3",
+		"gulp": "^5.0.0",
+		"gulp-append-prepend": "1.0.9",
+		"prettier": "3.4.2",
+		"webpack": "^5.97.1"
+	},
+	"browserslist": {
+		"production": [
+			"cover 99.8%",
+			"not dead",
+			"not OperaMini all"
+		],
+		"development": [
+			"cover 99.8%",
+			"not dead",
+			"not OperaMini all"
+		]
+	}
+}
